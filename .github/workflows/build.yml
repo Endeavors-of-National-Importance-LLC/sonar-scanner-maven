@@ -147,7 +147,7 @@ jobs:
           secrets: |
             development/github/token/licenses-ro token | GITHUB_TOKEN;
       - name: Configure Maven
-        uses: SonarSource/ci-github-actions/config-maven@v1
+        uses: SonarSource/ci-github-actions/config-maven@1.3.20
         with:
           artifactory-reader-role: private-reader
           use-develocity: ${{ env.USE_DEVELOCITY }}
